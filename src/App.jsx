@@ -5,7 +5,6 @@ import Homepage from './pages/Homepage'
 import Footer from './components/Footer'
 import About from './pages/About'
 import BackToTop from './components/BAckToTop'
-import Lodre from './components/Lodre'
 import Blog from './pages/Blog'
 
 function App() {

@@ -23,7 +23,7 @@ const Nav = () => {
             <nav className=' max-w-[1224px] mx-auto px-3 mt-[25px] sm:mt-[41px]'>
                 <div className=' flex items-center justify-between'>
                     <div className=' flex items-center gap-[65.19px] '>
-                        <Link to='/'><Logo /></Link>
+                        <Link to={"/"}><Logo /></Link>
                         <Link to='/our' className={` hidden lg:block font-["poppins"] text-[15px] text-[#000] font-semibold leading-[normal] relative after:absolute after:w-0 after:h-[2px] after:bg-[#B00000] after:left-[50%] after:bottom-[-4px] hover:after:w-[80%] hover:after:left-[8%] after:duration-300`}> Our Services</Link>
                     </div>
                     <div className=' flex items-center gap-[33px] min-[992px]:gap-[70px] min-[1200px]:gap-[170px]'>
