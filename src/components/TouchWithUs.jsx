@@ -12,7 +12,7 @@ const TouchWithUs = () => {
                 <span className=' absolute left-[40%] top-0 max-sm:top-[-12px] -translate-x-4'><ElipseRightSvg /></span>
             </div>
         </div>
-   )
+    )
 }
 
 export default TouchWithUs

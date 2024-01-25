@@ -8,15 +8,15 @@ const Nav = () => {
     function MobView() {
         setShow(!show)
         if (show === false) {
-            document.body.classList.add('overflow-hidden')
+            document.body.classNameList.add('overflow-hidden')
         }
         else {
-            document.body.classList.remove('overflow-hidden')
+            document.body.classNameList.remove('overflow-hidden')
         }
     }
     function closeNav() {
         setfirst(false)
-        document.body.classList.remove("max-lg:overflow-hidden")
+        document.body.classNameList.remove("max-lg:overflow-hidden")
     }
     return (
         <>
@@ -28,7 +28,7 @@ const Nav = () => {
                     </div>
                     <div className=' flex items-center gap-[33px] min-[992px]:gap-[70px] min-[1200px]:gap-[170px]'>
                         <ul className={`${show === true ? "left-0" : "left-[-100%]"} flex items-center gap-[33px] mobileview max-[991px]:absolute max-[991px]:top-0 max-[991px]:h-full max-[991px]:justify-center max-[991px]:flex-col max-[991px]:w-full max-[991px]:duration-300 max-[991px]:z-[4] max-[991px]:bg-white`}>
-                            <li><Link   to='/' className={` block lg:hidden font-["poppins"] text-[15px] text-[#000] font-semibold leading-[normal] relative after:absolute after:w-0 after:h-[2px] after:bg-[#B00000] after:left-[50%] after:bottom-[-4px] hover:after:w-[80%] hover:after:left-[8%] after:duration-300`}> Our Services</Link></li>
+                            <li><Link to='/' className={` block lg:hidden font-["poppins"] text-[15px] text-[#000] font-semibold leading-[normal] relative after:absolute after:w-0 after:h-[2px] after:bg-[#B00000] after:left-[50%] after:bottom-[-4px] hover:after:w-[80%] hover:after:left-[8%] after:duration-300`}> Our Services</Link></li>
                             <li><Link to='/about' className={`  font-["poppins"] text-[15px] text-[#000] font-semibold leading-[normal] relative after:absolute after:w-0 after:h-[2px] after:bg-[#B00000] after:left-[50%] after:bottom-[-4px] hover:after:w-[80%] hover:after:left-[8%] after:duration-300`}>About</Link></li>
                             <li><Link to='/Blog' className={`  font-["poppins"] text-[15px] text-[#000] font-semibold leading-[normal] relative after:absolute after:w-0 after:h-[2px] after:bg-[#B00000] after:left-[50%] after:bottom-[-4px] hover:after:w-[80%] hover:after:left-[8%] after:duration-300`}>Blog&News</Link></li>
                             <li><Link to='/Contact ' className={`  font-["poppins"] text-[15px] text-[#000] font-semibold leading-[normal] relative after:absolute after:w-0 after:h-[2px] after:bg-[#B00000] after:left-[50%] after:bottom-[-4px] hover:after:w-[80%] hover:after:left-[8%] after:duration-300`}>Contact </Link></li>

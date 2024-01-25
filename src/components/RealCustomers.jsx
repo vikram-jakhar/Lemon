@@ -16,14 +16,14 @@ const RealCustomers = () => {
     <>
       <div className='container mr-auto ml-auto max-w-[1220px] lg:mt-12 '>
         <div className='grid grid-cols-1 lg:grid-cols-2 my-10 sm:my-16 lg:my-20 gap-4 sm:gap-6 lg:gap-[30px] px-3 mt-12'>
-          <div className='flex flex-col lg:items-end lg:pl-[100px]'>
-            <div className='relative max-sm:pl-16 max-lg:pl-[100px]'>
+          <div className='flex flex-col lg:items-end lg:pl-[10px]'>
+            <div className='relative sm:pl-16 max-lg:pl-[10px]'>
               <h2 className='text-[#18191F] text-[32px] xl:text-[40px] sm:text-5xl font-extrabold sm:!leading-[64px] font-Inter max-w-[445px]'>Real Stories from Real Customers</h2>
               <p className='text-[#18191F] text-lg font-Inter font-normal leading-[32px] max-w-[573px] mt-2 sm:mt-3'>Get inspired by these stories.</p>
               <span className=' absolute top-0 left-0 max-sm:translate-x-0 lg:-translate-x-[67%] -translate-y-[40%] sm:-translate-y-[46%]'><QueteMark /></span>
             </div>
             <div className='bg-white shadow-[0_10px_20px_0_rgba(41,41,42,0.07)] rounded-lg lg:max-w-[350px] w-full mt-4 lg:mt-6'>
-              <div className='py-2 px-8 flex gap-4'>
+              <div className='py-2 px-3 flex gap-4'>
                 <span className='mt-20'><QueteMarkBlue /></span>
                 <div className='flex flex-col  items-start'>
                   <img src={ImageCard1} alt='Icon' />
