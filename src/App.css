@@ -4,7 +4,7 @@
   .mobileview {
       width: 100% !important;
       min-height: 100vh !important;
-      position: absolute !important;
+      position: fixed !important;
       flex-direction: column !important;
       justify-content: center !important;
       align-items: center;
@@ -17,5 +17,8 @@
      backdrop-filter: blur(30px) !important;
       
 
+  }
+  .overflow-hidden{
+    overflow: hidden;
   }
 }
