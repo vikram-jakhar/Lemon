@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+@media (max-width:1023px) {
+  .mobileview {
+      width: 100% !important;
+      min-height: 100vh !important;
+      position: absolute !important;
+      flex-direction: column !important;
+      justify-content: center !important;
+      align-items: center;
+      color: wheat !important;
+      top: 0 !important;
+      z-index: 15 !important;
+      gap: 60px !important;
+      font-size: 40px !important;
+      overflow-y: hidden !important;
+     backdrop-filter: blur(30px) !important;
+      
+
+  }
+}
