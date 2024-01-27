@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
-import { RightIcon, Toggle } from './SvgFile'
+import { RightIcon } from './SvgFile'
 
 
 const LemonWares = () => {
+    const [color, setcolor] = useState(false)
     const [data, setdata] = useState("tab1")
     function tabs(tab) {
         setdata(tab);
@@ -12,6 +13,10 @@ const LemonWares = () => {
         { plan: "Standard", price: "$4.20", pricePremium: "$8.80" },
         { plan: "Suprem", price: "$7.00", pricePremium: "$12.80" },
     ]
+    function togglechane() {
+        setcolor(!color)
+    }
+
     return (
         <>
             <div className='max-w-[1097px] mr-auto ml-auto px-3  sm:mt-[133px]'>
@@ -21,11 +26,10 @@ const LemonWares = () => {
                     <p className='text-[#000] text-[25px] font-normal leading-[25px] text-center'>Monthly</p>
                     <label className="relative inline-flex items-center cursor-pointer">
                         <input className="sr-only peer" value="" type="checkbox" />
-                        <div className=" bg-[#B00000] via-neutral-700 to-neutral-600  rounded-full outline-none duration-1000 after:duration-300 w-24 h-12  shadow-md  peer-focus:outline-none  after:content-[''] after:rounded-full after:absolute  peer-checked:after:rotate-180 after:bg-white  after:outline-none after:h-10 after:w-10 after:top-1 after:left-1   peer-checked:after:translate-x-12 peer-hover:after:scale-125">
+                        <div onClick={togglechane} className={`${color ? "bg-[yellow]" : ""} bg-[#B00000]   rounded-full outline-none duration-1000 after:duration-300 w-24 h-12  shadow-md  peer-focus:outline-none  after:content-[''] after:rounded-full after:absolute  peer-checked:after:rotate-180 after:bg-white  after:outline-none after:h-8 after:w-8 after:top-[7px] after:left-[7px]   peer-checked:after:translate-x-12`}>
                         </div>
                     </label>
                     <p className='text-[#000] text-[25px] font-normal leading-[25px] flex items-center  text-center relative'>Yearly <span className='max-md:hidden absolute py-2 px-3 rounded-[8px] bg-[#FFE87A] left-[100px]  text-nowrap'>20%  discount</span> </p>
-
                 </div>
                 <div className='w-full max-w-[886px] flex items-center mx-auto border-b-4 border-solid border-[#C4C4C4] mt-10 mb-10'>
                     <div className={`${data === "tab1" ? " relative after:w-full flex justify-center after:h-[4px] after:bg-[#B00000] after:absolute after:bottom-[-3px]  after:left-[0]  " : "text-[#000] "} w-1/2 flex justify-center `}>
@@ -45,7 +49,7 @@ const LemonWares = () => {
                                         <h2 className=' text-[28px] font-Poppins font-semibold text-black leading-6'>{items.plan}</h2>
                                         <p className=' font-Poppins text-xs font-normal text-black mt-3 leading-[18px]'>with all your customers via all conversation channels in one central dashboard.</p>
                                         <p className=' text-black text-4xl sm:text-[42px] font-semibold font-Poppins leading-8 mt-5 md:mt-7'>{items.price}</p>
-                                        <span className='text-black text-sm font-Poppins font-light'>Per month</span>
+                                        <div className={` ${color ? "per year" : "per month"} pt-4 text-black text-sm font-Poppins font-light`}>Per month</div>
                                         <button className=' text-black font-semibold font-Poppins text-sm text-center w-full bg-transparent border-[2px]  relative isolation-auto z-10 hover:text-white duration-500 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-0  before:bg-[#B00000] before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700 border-black rounded-xl leading-8 py-[9px] my-6 sm:my-8 md:my-[35px]'>
                                             Choose this Plan</button>
                                         <div className='flex flex-col sm:flex-row lg:flex-col justify-between sm:justify-around lg:justify-start '>
@@ -78,8 +82,8 @@ const LemonWares = () => {
                                         <h2 className=' text-[28px] font-Poppins font-semibold text-black leading-6'>{items.plan}</h2>
                                         <p className=' font-Poppins text-xs font-normal text-black mt-3 leadin  g-[18px]'>with all your customers via all conversation channels in one central dashboard.</p>
                                         <p className=' text-black text-4xl sm:text-[42px] font-semibold font-Poppins leading-8 mt-5 md:mt-7'>{items.pricePremium}</p>
-                                        <span className='text-black text-sm font-Poppins font-light'>Per month</span>
-                                        <button className=' text-black font-semibold font-Poppins text-sm text-center w-full bg-transparent border-[2px] border-black rounded-xl leading-8 py-[9px] my-6 sm:my-8 md:my-[35px]'>Choose this Plan</button>
+                                        <p className={` text-sm pt-4 text-black font-Poppins font-light`}>Per month</p>
+                                        <button className=' text-black font-semibold font-Poppins text-sm text-center w-full bg-transparent border-[2px] border-black rounded-xl leading-8 py-[9px] my-6 sm:my-8 md:my-[35px] relative isolation-auto z-10 hover:text-white duration-500 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-0  before:bg-[#B00000] before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700'>Choose this Plan</button>
                                         <div className='flex flex-col sm:flex-row lg:flex-col justify-between sm:justify-around lg:justify-start'>
                                             <div>
                                                 <p className='flex items-center text-[#808080] text-sm sm:text-base font-Inter font-bold gap-4 sm:gap-6'><span><RightIcon /></span>2GB SSD</p>

@@ -32,7 +32,7 @@ const BackToTop = () => {
     return (
         <button
             className={`${isVisible ? 'opacity-100' : 'opacity-0'
-                } fixed z-30 bottom-8 right-8 p-2 bg-[#B00000] border border-black border-silod text-white rounded-full transition-opacity duration-300 ease-in-out focus:outline-none animate-bounce`}
+                } fixed z-30 bottom-8 right-8 p-2 bg-[#B00000] border border-red-600 border-silod text-white rounded-full transition-opacity duration-300 ease-in-out focus:outline-none animate-bounce`}
             onClick={scrollToTop}
         >
             <img src={backtotop} alt="backtotop" className='max-w-[35px] max-h-[35px]' />

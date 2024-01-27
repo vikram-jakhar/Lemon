@@ -54,22 +54,22 @@ const WebHosting = () => {
                     <div className='span-col-1 '>
                         <div className='grid grid-col-1 max-md:grid-cols-2 md:grid-cols-3  lg:grid-cols-3 -mx-3 gap-[30px] sm:gap-[59px] mt-[25px]  '>
                             <div className='span-col-1 flex lg:justify-end justify-center  items-center'>
-                                <img src={C_Panel} alt="C_Panel" />
+                                <img src={C_Panel} className='hover:brightness-[0.1] hover:scale-[0.9] transition-all duration-500 ' alt="C_Panel" />
                             </div>
                             <div className='span-col-1 flex lg:justify-end justify-center  items-center'>
-                                <img src={Imunify} alt="Imunify" />
+                                <img src={Imunify} className='hover:brightness-[2.1] hover:scale-[0.9] transition-all duration-500 ' alt="Imunify" />
                             </div>
                             <div className='span-col-1 flex lg:justify-end justify-center  items-center'>
-                                <img src={LiteSpeed} alt="LiteSpeed" />
+                                <img src={LiteSpeed} className='hover:brightness-[0.1] hover:scale-[0.9] transition-all duration-500 ' alt="LiteSpeed" />
                             </div>
                             <div className='span-col-1 flex lg:justify-end justify-center  items-center'>
-                                <img src={Soft} alt="Soft" />
+                                <img src={Soft} className='hover:brightness-[0.1] hover:scale-[0.9] transition-all duration-500 ' alt="Soft" />
                             </div>
                             <div className='span-col-1 flex lg:justify-end justify-center  items-center'>
-                                <img src={Wordpress} alt="Wordpress" />
+                                <img src={Wordpress} className='hover:brightness-[0.4] hover:scale-[0.9] transition-all duration-500 ' alt="Wordpress" />
                             </div>
                             <div className='span-col-1 flex lg:justify-end justify-center items-center'>
-                                <img src={Cloud} alt="Cloud" />
+                                <img src={Cloud} className='hover:brightness-[0.9] hover:scale-[0.9] transition-all duration-500 ' alt="Cloud" />
                             </div>
                         </div>
                     </div>

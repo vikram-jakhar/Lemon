@@ -67,22 +67,22 @@ const RealCustomers = () => {
           </div>
           <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 items-center justify-center max-sm:gap-5'>
             <div className='flex justify-center lg:justify-end '>
-              <img src={Image1} alt="Image1" />
+              <img src={Image1} className='hover:brightness-[0.5] hover:scale-[0.9] transition-all duration-500 ' alt="Image1" />
             </div>
             <div className='flex justify-center lg:justify-end'>
-              <img src={Image2} alt="Image1" />
+              <img src={Image2} className='hover:brightness-[0.5] hover:scale-[0.9] transition-all duration-500 '  alt="Image1" />
             </div>
             <div className='flex justify-center lg:justify-end'>
-              <img src={Image3} alt="Image1" />
+              <img src={Image3} className='hover:brightness-[0.5] hover:scale-[0.9] transition-all duration-500 '  alt="Image1" />
             </div>
             <div className='flex justify-center lg:justify-end'>
-              <img src={Image4} alt="Image1" />
+              <img src={Image4} className='hover:brightness-[0.5] hover:scale-[0.9] transition-all duration-500 '  alt="Image1" />
             </div>
             <div className='flex justify-center lg:justify-end'>
-              <img src={Image5} alt="Image1" />
+              <img src={Image5} className='hover:brightness-[0.5] hover:scale-[0.9] transition-all duration-500 '  alt="Image1" />
             </div>
             <div className='flex justify-center lg:justify-end'>
-              <img src={Image6} alt="Image6" />
+              <img src={Image6} className='hover:brightness-[0.5] hover:scale-[0.9] transition-all duration-500 '  alt="Image6" />
             </div>
           </div>
         </div>
